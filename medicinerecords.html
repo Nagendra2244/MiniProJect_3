@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Supplier and Medicine Details Form</title>
+  </head>
+  
+  <body bgcolor="orange">
+    <h1>Please fill the form</h1>
+    <form>
+      <fieldset>
+        <legend>Supplier Details</legend>
+        <label for="supplier_id">Supplier ID:</label>
+        <input type="text" id="supplier_id" name="supplier_id"><br><br>
+        <label for="supplier_name">Supplier Name:</label>
+        <input type="text" id="supplier_name" name="supplier_name"><br><br>
+        <label for="date_of_supply">Date of Supply:</label>
+        <input type="date" id="date_of_supply" name="date_of_supply"><br><br>
+        <label for="time_of_supply">Time of Supply:</label>
+        <input type="time" id="time_of_supply" name="time_of_supply"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Medicine Details</legend>
+        <table>
+          <thead>
+            <tr>
+              <th>Sno</th>
+              <th>Medicine Name</th>
+              <th>Medicine ID</th>
+              <th>Supplier</th>
+              <th>Manufacturing Date</th>
+              <th>Expiry Date</th>
+              <th>Quantity (units)</th>
+              <th>Unit Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><input type="text" id="medicine_name_1" name="medicine_name_1"></td>
+              <td><input type="text" id="medicine_id_1" name="medicine_id_1"></td>
+              <td><input type="text" id="supplier_1" name="supplier_1"></td>
+              <td><input type="date" id="manufacturing_date_1" name="manufacturing_date_1"></td>
+              <td><input type="date" id="expiry_date_1" name="expiry_date_1"></td>
+              <td><input type="number" id="quantity_1" name="quantity_1"></td>
+              <td><input type="number" id="unit_price_1" name="unit_price_1"></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><input type="text" id="medicine_name_2" name="medicine_name_2"></td>
+              <td><input type="text" id="medicine_id_2" name="medicine_id_2"></td>
+              <td><input type="text" id="supplier_2" name="supplier_2"></td>
+              <td><input type="date" id="manufacturing_date_2" name="manufacturing_date_2"></td>
+              <td><input type="date" id="expiry_date_2" name="expiry_date_2"></td>
+              <td><input type="number" id="quantity_2" name="quantity_2"></td>
+              <td><input type="number" id="unit_price_2" name="unit_price_2"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><input type="text" id="medicine_name_3" name="medicine_name_3"></td>
+              <td><input type="text" id="medicine_id_3" name="medicine_id_3"></td>
+              <td><input type="text" id="supplier_3" name="supplier_2"></td>
+              <td><input type="date" id="manufacturing_date_3" name="manufacturing_date_3"></td>
+              <td><input type="date" id="expiry_date_3" name="expiry_date_3"></td>
+              <td><input type="number" id="quantity_3" name="quantity_3"></td>
+              <td><input type="number" id="unit_price_3" name="unit_price_3"></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><input type="text" id="medicine_name_4" name="medicine_name_4"></td>
+              <td><input type="text" id="medicine_id_4" name="medicine_id_4"></td>
+              <td><input type="text" id="supplier_4" name="supplier_4"></td>
+              <td><input type="date" id="manufacturing_date_4" name="manufacturing_date_4"></td>
+              <td><input type="date" id="expiry_date_4" name="expiry_date_4"></td>
+              <td><input type="number" id="quantity_4" name="quantity_4"></td>
+              <td><input type="number" id="unit_price_4" name="unit_price_4"></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><input type="text" id="medicine_name_5" name="medicine_name_5"></td>
+              <td><input type="text" id="medicine_id_5" name="medicine_id_5"></td>
+              <td><input type="text" id="supplier_5" name="supplier_5"></td>
+              <td><input type="date" id="manufacturing_date_5" name="manufacturing_date_5"></td>
+              <td><input type="date" id="expiry_date_5" name="expiry_date_5"></td>
+              <td><input type="number" id="quantity_5" name="quantity_5"></td>
+              <td><input type="number" id="unit_price_5" name="unit_price_5"></td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      
+      <style>
+        #submit-btn-container {
+          display: flex;
+          justify-content:center;
+          align-items: center;
+        }
+      </style>
+      <div id="submit-btn-container">
+        <input type="submit" value="Submit">
+      </div>
+      <br>
+    </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Patient's Information System</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: darkslategrey;
+      }
+      fieldset {
+        border: 2px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      legend {
+        font-weight: bold;
+      }
+      label {
+        display: inline-block;
+        width: 150px;
+        font-weight: bold;
+      }
+      input[type=text], input[type=password] {
+        padding: 8px;
+        width: 300px;
+        border-radius: 4px;
+        border: 2px solid #ccc;
+        margin-bottom: 10px;
+      }
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor:left top;
+      }
+      input[type=submit]:hover {
+        background-color: #45a049;
+        
+    
+      }
+    </style>
+  </head>
+  <body style="background-color:palepink;background-image:url(file:///C:/Users/NAGENDRA%20BABU/OneDrive/Desktop/Hospital%20inner%20Images/image4.jpg);background-size:cover;">
+
+    <a href="AROGYAHOSPITAL.html" style="font-size: 10px;"><h1>Home</h1></a>
+    <h1 style="text-align: center;">Patient's Information </h1>
+    
+    <fieldset>
+      <legend>Search for Current Patient</legend>
+      <label for="current_patient_id">Patient ID:</label>
+      <input type="text" id="current_patient_id" name="current_patient_id">
+      <input type="submit" value="Search">
+    </fieldset>
+    
+    <fieldset>
+      <legend>Recovered Patient</legend>
+      <label for="recovered_patient_id">Patient ID:</label>
+      <input type="text" id="recovered_patient_id" name="recovered_patient_id">
+      <input type="submit" value="Search">
+    </fieldset>
+    
+    <fieldset>
+      <legend>Delete Patient Details</legend>
+			<label for="patient_id">Patient ID:</label>
+			<input type="text" id="patient_id" name="patient_id" required><br><br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required><br><br>
+			<div style="text-align:center;">
+				<input type="submit" value="Delete" name="delete"><br><br>
+			</div>
+		</fieldset>
+</body>
+</html>

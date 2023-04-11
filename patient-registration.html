@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patient Registration</title>
+	<style>
+		body {
+		  font-family: Arial, sans-serif;
+		}
+		fieldset {
+		  border: 2px solid #ccc;
+		  padding: 10px;
+		  margin-bottom: 20px;
+		}
+		legend {
+		  font-weight: bold;
+		}
+		label {
+		  display: inline-block;
+		  width: 150px;
+		
+		}
+		input[type=text], input[type=password] {
+		  padding: 8px;
+		  width: 300px;
+		  border-radius: 4px;
+		  border: 2px solid #ccc;
+		  margin-bottom: 10px;
+		}
+		input[type=submit] {
+		
+		  color: white;
+		  padding: 10px 20px;
+		  border: none;
+		  border-radius: 4px;
+		  cursor:left top;
+		}
+		
+	  </style>
+</head>
+<body style="background-color:palepink;background-image:url('file:///C:/Users/NAGENDRA BABU/OneDrive/Desktop/Hospital inner Images/image10.jpg');background-size:cover;">
+
+
+	<a href="AROGYAHOSPITAL.html" style="font-size: 10px;"><h1>Home</h1></a>
+   <h1 style="text-align: center;">Patient Registration</h1>
+	<form>
+		
+		<fieldset>
+		<legend style="font-weight: bold; font-size: 1.5em;"><strong>Patient Details</strong></legend>
+		<label for="patient_name">Patient Name:</label>
+		<input type="text" id="patient_name" name="patient_name"><br><br>
+		<label for="patient_age">Patient Age:</label>
+		<input type="text" id="patient_age" name="patient_age"><br><br>
+		<label for="patient_gender">Gender:</label>
+		<select id="patient_gender" name="patient_gender">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select><br><br>
+		<label for="patient_phonenumber">Phone Number:</label>
+		<input type="text" id="patient_phonenumber" name="patient_phonenumber"><br><br>
+		<label for="patient_Alternatenumber">Alternate Number:</label>
+		<input type="text" id="patient_Alternatenumber" name="patient_Alternatenumber"><br><br>
+		<label for="patient_AadharNumber">Aadhar Number:</label>
+		<input type="text" id="patient_AadharNumber" name="patient_AadharNumber"><br><br>
+		<div style="display: flex; align-items: center; justify-content: justify;">
+			<label for="address" >Address:</label>
+			<textarea id="address" name="address" rows="5" cols="50"></textarea>
+		  </div>
+	</fieldset>
+		
+		<fieldset>
+			<legend style="font-weight: bold; font-size: 1.5em;"><strong>Guardian Details</strong></legend>
+		<label for="guardian_name">Guardian Name:</label>
+		<input type="text" id="guardian_name" name="guardian_name"><br><br>
+		
+		<label for="guardian_relationship">Relationship to Patient:</label>
+		<input type="text" id="guardian_relationship" name="guardian_relationship"><br><br>
+		<label for="guardian_age">Guardian Age:</label>
+		<input type="text" id="guardian_age" name="guardian_age"><br><br>
+		<label for="guardian_gender">Gender:</label>
+		<select id="guardian_gender" name="guardian_gender">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select><br><br>
+		<label for="Guardian_phonenumber">Phone number:</label>
+		<input type="text" id="Guardian_phonenumber" name="Guardian_phonenumber"><br><br>
+		<label for="Guardian_Alternatenumber">Alternate number:</label>
+		<input type="text" id="Guardian_Alternatenumber" name="Guardian_Alternatenumber"><br><br>
+		<label for="Guardian_AadharNumber">Aadhar number:</label>
+		<input type="text" id="Guardian_AadharNumber" name="Guardian_AadharNumber"><br><br>
+		<div style="display: flex; align-items: center; justify-content: justify;">
+			<label for="address" >Address:</label>
+			<textarea id="address" name="address" rows="5" cols="50"></textarea>
+		  </div>
+	</fieldset>
+		
+		<fieldset>
+			<legend style="font-weight: bold; font-size: 1.5em;"><strong>COVID-19 Details</strong></legend>
+		<label for="travel">Did the patient travel in the last month?</label>
+			<input type="radio" name="travel" value="yes">Yes
+			<input type="radio" name="travel" value="no">No<br>
+
+			<label for="vaccine">Has the patient received COVID-19 vaccine?</label>
+			<input type="radio" name="vaccine" value="yes">Yes
+			<input type="radio" name="vaccine" value="no">No<br>
+
+			<label for="dose">If yes, how many doses has the patient received?</label>
+			<select name="dose" id="dose">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+			</select><br>
+
+			<label for="gender">Patient Gender:</label>
+			<input type="radio" name="gender" value="male">Male
+			<input type="radio" name="gender" value="female">Female
+			<input type="radio" name="gender" value="other">Other<br>
+
+			<label for="last_dose">Date of the patient's last vaccine dose:</label>
+			<input type="date" id="last_dose" name="last_dose"><br>
+
+			<label for="last_test">Date of the patient's last COVID-19 test:</label>
+			<input type="date" id="last_test" name="last_test"><br>
+
+			<label for="symptoms">Is the patient showing any COVID-19 symptoms?</label>
+			<input type="radio" name="symptoms" value="yes">Yes
+			<input type="radio" name="symptoms" value="no">No<br>
+		</fieldset>
+			
+			<fieldset>
+			<legend style="font-weight: bold; font-size: 1.5em;"><strong>Health Insurance Details</strong></legend>
+			<label for="membership">Insurance Membership:</label>
+			<input type="text" id="membership" name="membership"><br><br>
+
+			<label for="policy">Insurance Policy:  </label>
+			<input type="text" id="policy" name="policy"><br><br><br>
+		</fieldset>
+		<fieldset>
+		<legend style="font-weight: bold; font-size: 1.5em;"><strong>Joining Details</strong></legend>
+			
+			<label for="join_date">Date of Admission:</label>
+			<input type="date" id="join_date" name="join_date"><br><br>
+
+			<label for="join_time">Time of Admission:</label>
+			<input type="time" id="join_time" name="join_time"><br><br>
+		</fieldset>
+	<style>
+	   #submit-btn-container {
+		 display: flex;
+		 justify-content:center;
+		 align-items: center;
+	
+	   }
+	   input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor:left top;
+      }
+      input[type=submit]:hover {
+        background-color: #45a049;
+        
+    
+      }
+	 </style>
+	 <div id="submit-btn-container" color="green">
+	   <input type="submit" value="Submit">
+	 </div>
+	</form>
+</body>
+</html>     
